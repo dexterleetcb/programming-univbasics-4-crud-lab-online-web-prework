@@ -33,4 +33,29 @@ end
 
 describe "remove_element_from_end_of_array" do
   it "takes in an argument of an array and removes the last element in the array" do
+    array = ["I", "am", "really", "learning", "arrays!"]
+    expect(remove_element_from_end_of_array(array)).to eq("arrays!")
+  end
+end
+
+describe "remove_element_from_start_of_array" do 
+  it "takes in an argument of an array and remvoes the first element from the array" do 
+    array = ["wow", "I", "am", "really", "learning", "arrays!"]
+    expect(remove_element_from_start_of_array)).to eq("wow")
+  end
+end
+
+describe "retrieve_element_from_index" do 
+  it "takes in an argument of an array and an index number and returns the element stored at that index" do 
+    array = ["wow", "I", "am", "really", "learning", "arrays!"]
+    index_number = 2  
+    expect(retrieve_eleemnt_from_index(array, 2)).to eq("am")
+  end
+end
+
+describe "retrieve_first_element_from_array" do 
+  it "takes in an argument of an array and returns the first element stored in the aray" do 
+    array = ["wow", "I", "am", "really", "learning", "arrays!"]
+    expect(retrieve_first_element_from_array(array)).to eq("wow")
+    
     
