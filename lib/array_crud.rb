@@ -57,5 +57,23 @@ describe "retrieve_first_element_from_array" do
   it "takes in an argument of an array and returns the first element stored in the aray" do 
     array = ["wow", "I", "am", "really", "learning", "arrays!"]
     expect(retrieve_first_element_from_array(array)).to eq("wow")
+  end
+end
+
+describe "retrieve_last_element_from_array" do 
+  it "takes in an argument of an array and returns the last element of that array" do 
+    array = ["wow", "I", "am", "really", "learning", "arrays!"]
+    expect(retrieve__last_element_from_array(array)).to eq("arrays!")
+  end
+end
+
+describe "update_element_from_index" do
+  it "takes in an arguemnt of an array, an index number and element value and returns the updated elment" do 
+    array = ["wow", "I", "am", "really", "learning", "arrays!"]
+    index_number = 4
+    expect(update_element_from_index(array, 4, "totally")).to eq("totally")
+  end
+end
+
     
     
